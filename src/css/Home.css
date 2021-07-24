@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contianer {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.contianer .logo {
+  width: 100%;
+}
+
+.contianer .logo h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.contianer .formDiv {
+  width: 90%;
+  height: 70vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.contianer .formDiv form {
+  z-index: 8;
+  width: inherit;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contianer .formDiv form .inputText {
+  z-index: 8;
+  width: 90%;
+  height: 40px;
+  border-radius: 16px;
+  outline: none;
+  padding-left: 30px;
+  font-size: 1.6rem;
+  border: none;
+  -webkit-box-shadow: 1px 1px 10px gray;
+          box-shadow: 1px 1px 10px gray;
+}
+
+.contianer .formDiv form .inputText.openSearchBox {
+  border-radius: 16px 16px 0px 0px;
+  -webkit-box-shadow: 1px -5px 10px gray;
+          box-shadow: 1px -5px 10px gray;
+}
+
+.contianer .formDiv form svg.btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+  -webkit-box-shadow: 1p 30px 10px gray;
+          box-shadow: 1p 30px 10px gray;
+}
+
+.contianer .suggestionDiv {
+  display: none;
+  z-index: 3;
+  width: inherit;
+  height: 300px;
+  position: absolute;
+  bottom: 10px;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contianer .suggestionDiv .suggestionBox {
+  width: 90%;
+  height: inherit;
+  border: none;
+  border-radius: 0px 0px 16px 16px;
+  -webkit-box-shadow: 1px 10px 10px gray;
+          box-shadow: 1px 10px 10px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contianer .suggestionDiv .suggestionBox .suggesions {
+  width: 100%;
+  height: 250px;
+  padding: 0px 0px 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contianer .suggestionDiv .suggestionBox .suggesions .suggesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contianer .suggestionDiv .suggestionBox .suggesions .suggesion h3 {
+  padding-left: 15px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.contianer .suggestionDiv .suggestionBox .suggesions .suggesion svg {
+  opacity: 0.7;
+}
+
+.contianer .suggestionDiv.openSearchBox {
+  display: block;
+}
+/*# sourceMappingURL=Home.css.map */
